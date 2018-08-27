@@ -1,0 +1,172 @@
+<main>
+	<div class="ourClients-container container">
+		<div class="row ourClients-details-container">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div>
+						<h5>OUR CLIENTS</h5>
+						<p>Great work comes from trusted, honest and transparent partnerships. Our clients place their utmost faith in our 
+						 Coding Ninjas and love the results.
+						</p>
+						<div class="end-note"></div>
+					</div>
+					<div class="clients-logo-container">
+						<a href="https://www.anhance.com/" target="_blank"><img src="/imgs/1-client.png"></a>
+						<a href="http://tecademics.com/" target="_blank"><img src="/imgs/4-client.png"></a>
+						<a href="www.facebook.com/probist/" target="_blank"><img src="/imgs/2-client.png"></a>
+						<a href="https://www.hyundaiusa.com/" target="_blank"><img src="/imgs/5-client.png"></a>
+						<a href="https://www.supportsync.com" target="_blank"><img src="/imgs/3-client.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row casestudies-container">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div>
+						<h5>CASE STUDIES</h5>
+						<p>Take a moment to look through our client success stories and find out how we have impacted company revenues and lives of millions of individuals.
+						</p>
+						<div class="end-note"></div>
+					</div>
+					<div class="casestudy-details-container">
+						<div class="first-half-casestudy">
+							<div class="casestudy">
+								<div class="casestudy-cover">
+									<img src="/imgs/casestudy-1.png">
+								</div>
+								<div style="margin-top: -9px; background-color: #ee5a28;" class="casestudy-txt">
+									<a ui-sref="app.public.solution.caseStudies.tecademics">
+										<h5>Tecademics</h5>
+										<p>Through their distance learning program, Tecademics aims to  disrupt education for Entrepreneurs and Marketers in the fields of Digital marketing, Entrepreneurship, and Financial literacy.
+										</p>
+									</a>
+									<p class="read-full-section"><a ui-sref="app.public.solution.caseStudies.tecademics">READ FULL</a></p>
+								</div>
+							</div>
+							<div style="margin-left: -2%;" class="casestudy">
+								<div style="background-color: #235baa;" class="casestudy-txt">
+									<a ui-sref="app.public.solution.caseStudies.hyundai">
+										<h5>Hyundai</h5>
+										<p>Hyundai has always been a long-standing partner of UEFA. To express the company’s passion for football in the Euro 2012, Hyundai hosted a Facebook application based video contest.
+										</p>
+									</a>
+									<p class="read-full-section"><a ui-sref="app.public.solution.caseStudies.hyundai">READ FULL</a></p>
+								</div>
+								<div class="casestudy-cover">
+									<img src="/imgs/casestudy-2.png">
+								</div>
+							</div>
+						</div>
+						<div ng-show="showAllCaseStudies" class="second-half-casestudy">
+							<div style="margin-top: -9px;" class="casestudy cover">
+								<div class="casestudy-cover">
+									<img src="/imgs/casestudy-3.png">
+								</div>
+							</div>
+							<div class="casestudy" style="margin-left: -2%; margin-top: -9px;">
+								<div style="background-color: #0d74ba;" class="casestudy-txt">
+									<a ui-sref="app.public.solution.caseStudies.supportsync">
+										<h5>Support Sync</h5>
+										<p>Support Sync is a return management application that helps different companies to synchronize customers, support agents, and return center personnel in real-time.
+										</p>
+									</a>
+									<p class="read-full-section"><a ui-sref="app.public.solution.caseStudies.supportsync">READ FULL</a></p>
+								</div>
+							</div>
+						</div>
+						<div ng-show="showAllCaseStudies" class="third-half-casestudy">
+							<div style="margin-top: -9px;" class="casestudy">
+								<div style="background-color: #0f9fcf;" class="casestudy-txt">
+									<a ui-sref="app.public.solution.caseStudies.anhance">
+										<h5>Anhance</h5>
+										<p>Anhance is an e-commerce platform for your digital content. It allows users to create an online store to manage and sell their online courses, downloads, webinars and podcasts.
+										</p>
+									</a>
+									<p class="read-full-section"><a ui-sref="app.public.solution.caseStudies.anhance">READ FULL</a></p>
+								</div>
+								<div class="casestudy-cover">
+									<img src="/imgs/casestudy-5.png">
+								</div>
+							</div>
+							<div class="casestudy" style="margin-left: -2%; margin-top: -9px;">
+								<div class="casestudy-cover">
+									<img src="/imgs/casestudy-4.png">
+								</div>
+								<div style="margin-top: -9px; background-color: #1f87c9;" class="casestudy-txt">
+									<a ui-sref="app.public.solution.caseStudies.probist">
+										<h5>Probist</h5>
+										<p>Probist helps users easily create and host their own branded website with all videos synced from Youtube channels.
+										</p>
+									</a>
+									<p class="read-full-section"><a ui-sref="app.public.solution.caseStudies.probist">READ FULL</a></p>
+								</div>
+							</div>
+						</div>
+						<div ng-show="showSeeMoreCaseStudies" class="see-more-section">
+							<button ng-click="seeAllCaseStudies();">SEE MORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row testimonial-container">
+			<div class="content-container">
+				<div class="twelve columns">
+					<!-- <div>
+						<h5>CLIENT TESTIMONIALS</h5>
+					</div>
+					<div carousel-lightbox class="testimonial-details-container">
+						<div class="testimonial-slide">
+							<div class="testimonial">
+								<p>We needed someone to implement our app design using the Zendesk framework. We viewed HireNinja’s portfolio and liked what we saw. HireNinja was perfect for the job as they were not only excellent at Javascript framework coding but also managed to make the complicated CSS design look just right. They allowed us to consider different approaches but were completely open to suggestions. We will work with HireNinja in the future for new apps on various CRM frameworks.
+								</p>
+								<img src="/imgs/1-testimonial.png">
+								<p>SupportSync</p>
+							</div>
+						</div>
+						<div class="testimonial-slide">
+							<div class="testimonial">
+								<p>I was looking for a development team that could provide a quick and efficient solution to implement our business idea. HireNinja was exactly that. Working with HireNinja doesn’t feel like working with anything other than your own software development team. They provide Coding Ninjas who know exactly what they’ve to do. Flexibility, reliability, and agility are no big deal for them, because these qualities are instilled in them through a well defined culture. HireNinja is our go to company for all development needs.
+								</p>
+								<img src="/imgs/1-testimonial.png">
+								<p>Probist</p>
+							</div>
+						</div>
+						<div class="testimonial-slide">
+							<div class="testimonial">
+								<p>Anhance is very impressed by the Ninja team working on our project. Not only is the code of impeccable quality but their team has a real understanding of our issues. They never accept our software requirements and suggestions blindly. They always question if what we are suggesting is the best way to approach the problem and give their own input. This practice leads to a much better product and we are thankful to HireNinja for their superior services.  HireNinja is indeed the right choice for our product.
+								</p>
+								<img src="/imgs/1-testimonial.png">
+								<p>Anhance</p>
+							</div>
+						</div>
+						<div class="testimonial-slide">
+							<div class="testimonial">
+								<p>HireNinja has been providing their services for Tecademics for nearly a year. They have proactively solved issues impacting our business. During our relationship, HireNinja has developed a good understanding of our own vision and work flows and found a way to successfully complement our operations without causing any discontinuities or issues on our side. They’re exemplar with REST APIs, MongoDB, AngularJS, Shopify, and Git as we’ve been developing our own applications using these.
+								</p>
+								<img src="/imgs/1-testimonial.png">
+								<p>Tecademics</p>
+							</div>
+						</div>
+						<div class="testimonial-slide">
+							<div class="testimonial">
+								<p>When it comes to efficient and reliable application development, HireNinja is without any doubts the best choice. We needed a development task to be done in the shortest time possible and HireNinja exceeded our expectations. It took them literally no time to understand what we needed for the project and they got to work instantly. We loved what they produced within the 3 days and recommend HireNinja to every company that needs a software gig done in the least time.
+								</p>
+								<img src="/imgs/1-testimonial.png">
+								<p>Hyundai</p>
+							</div>
+						</div>
+					</div> -->
+					<div class="post-project-section" style="margin-top: 0px;">
+						<p>Too good to be true? Try us out yourself or chat with us!</p>
+						<a ui-sref="app.public.startAProject"><button class="button-primary">POST A PROJECT</button></a>
+						<button class="button-primary" ng-click="chatNow();">CHAT NOW</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<ui-view></ui-view>

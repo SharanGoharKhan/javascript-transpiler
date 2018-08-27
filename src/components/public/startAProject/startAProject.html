@@ -1,0 +1,119 @@
+<main>
+	<div class="startProject-container container">
+		<div class="row start-project-details">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div>
+						<h5>Start a Project</h5>
+						<p> Our Ninjas are all set to start working  with amazing clients like you!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form name="projectForm">
+			<div class="row start-project-mandatory-container">
+				<div class="content-container">
+					<div class="twelve columns">
+						<div>
+					 		<div class="input-section">
+								<div>
+									<label>Name</label><span class="sm-asterik">*</span>
+									<input type="text" pattern="^[a-zA-Z\s]*$" name="name" ng-model="name" required>
+								</div>
+								<div>
+									<label>Email Address</label><span class="sm-asterik">*</span>
+									<input type="email" name="email" ng-model="email" required>
+								</div>
+					 		</div>
+					 		<div class="input-section">
+								<div>
+									<label>Contact Number</label><span class="sm-asterik">*</span>
+									<input type="tel" name="number" pattern="[0-9]+" ng-model="contactNumber" required>
+								</div>
+								<div>
+									<label>Skype ID</label><span class="sm-asterik">*</span>
+									<input type="text" name="skype" ng-model="skypeID" required>
+								</div>
+					 		</div>
+						</div>
+						<div ng-show="!canShowOptionalFieldSection" class="send-project-section">
+							<input type="checkbox" name="">
+							<span class="meta-text">I accept the HireNinja NDA <a href="">Learn More</a></span>
+							<div>
+								<button class="button-primary" ng-click="sendProjectDetails();">SUBMIT</button>
+								<!-- <button class="button-primary" ng-click="chatNow();">CHAT NOW</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row start-project-optional-label">
+				<div class="content-container">
+					<div class="twelve columns">
+						<hr/>
+						<div class="blue-dot" ng-click="toggleShowOptionalFieldSection();" ng-class="{'rotateAtTop': canShowOptionalFieldSection}"><p>></p></div>
+					</div>
+				</div>	
+			</div>
+			<div ng-show="canShowOptionalFieldSection" class="row start-project-optional-container">
+				<div class="content-container">
+					<div class="twelve columns">
+						<div>
+							<div class="input-section">
+								<div>
+									<div>
+										<label>Company Name (optional)</label>
+									</div>
+									<input type="text" name="" ng-model="companyName">
+								</div>
+							</div>
+							<div class="input-section">
+								<div>
+									<div>
+										<label>Website URL (optional)</label>
+									</div>
+									<input type="text" name="" ng-model="companyWebsiteUrl">
+								</div>
+							</div>
+							<div class="input-section">
+								<div>
+									<div>
+										<label>Project Name (optional)</label>
+									</div>
+									<input type="text" name="" ng-model="projectName">
+								</div>
+							</div>
+							<div class="input-section">
+								<div>
+									<div>
+										<label>Project Details (optional)</label>
+									</div>
+									<textarea ng-model="projectDetails"></textarea>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="upload-files-section">
+							<div>
+  								<input type="file" id="file-select" name="file" multiple/>							
+								<button class="button-primary" ng-click="uploadFile();">+ Upload Files</button>
+							</div>
+							<div>
+								<span class="meta-text">
+									Drag and Drop any images or documents that might be helpful in explaining your project brief here
+								</span>
+							</div>
+						</div> -->
+						<div class="send-project-section">
+							<input type="checkbox" name="">
+							<span class="meta-text">I accept the HireNinja NDA <a href="">Learn More</a></span>
+							<div>
+								<button class="button-primary" ng-click="sendProjectDetails();">SUBMIT</button>
+								<!-- <button class="button-primary" ng-click="chatNow();">CHAT NOW</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</main>

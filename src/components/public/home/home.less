@@ -1,0 +1,397 @@
+.home-header {
+
+	.header-content-container {
+		max-width: 100%;
+    	height: 560px;
+    	background-position: 50% 50%;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	-moz-background-size: cover;
+    	-webkit-background-size: cover;
+    	display: block;
+    	overflow: hidden;
+    	position: relative;
+		background-image: url("/imgs/home-header-img.jpg");
+
+		.header-content {
+			position: relative;
+			z-index: 2;
+			color: #fff;
+
+			.header-content-details {
+				margin: 0 auto;
+    			width: 90%;
+    			position: relative;
+    			top: 200px;
+    			color: #fff;
+    			text-align: center;
+    		
+    			p {
+    				width: 40%;
+    				margin: 0 auto;
+    				margin-bottom: 22px;
+    			}
+
+    			.sm-asterik {
+    				line-height: 0;
+    				color: #e32072;
+    				display: inline-block;
+    				position: relative;
+    				top: -4px;
+    				right: 5px;
+    			}
+
+    			.lg-asterik {
+    				font-size: 1.2em;
+    				line-height: 0;
+    				color: #e32072;
+    				display: inline-block;
+    				position: relative;
+    				top: 9px;
+    			}
+
+    			button {
+    			    margin-right: 7px;
+    				margin-top: 5px;
+    			}
+			}
+		}
+
+		&::after {
+			background-image: -moz-linear-gradient( 0deg, rgb(37,42,68) 0%, rgb(18,22,42) 55%, rgb(37,42,68) 100%, rgb(1,2,10) 100%);
+ 			background-image: -webkit-linear-gradient( 0deg, rgb(37,42,68) 0%, rgb(18,22,42) 55%, rgb(37,42,68) 100%, rgb(1,2,10) 100%);
+ 			background-image: -ms-linear-gradient( 0deg, rgb(37,42,68) 0%, rgb(18,22,42) 55%, rgb(37,42,68) 100%, rgb(1,2,10) 100%);
+ 			
+ 			display: block;
+ 			position: absolute;
+ 			content: '';
+
+ 			left: 0px;
+ 			top: 0px;
+ 			width: 100%;
+ 			height: 804px;
+ 			z-index: 1;
+ 			opacity: 0.851;
+		}
+	}
+
+  	/* Less than tablet */
+  	@media (max-width: 450px) {
+        .header-content-container {
+           	.header-content {
+            	.header-content-details {
+                  	top: 70px;
+              	}
+           	}
+        }
+  	}
+
+	/* Less than tablet */
+	@media (max-width: 750px) {
+
+		.header-content-container {
+			.header-content {
+				.header-content-details {
+    				p {
+    		  			width: 80% !important;
+    				}
+    			}
+				.header-logo {
+    				left: 34px;
+				}
+				.header-nav-bar {
+					display: none;
+				}
+				.hamburger-menu {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.home-container {
+
+	.content-container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			padding: 50px 0px 90px 0px;
+		}
+	}
+
+	.how-hireninja-works-container {
+		text-align: center;
+		
+		.wblocks-container {
+			position: relative;
+
+			.wblock {
+		    	width: 315px;
+    			height: 287px;
+    			margin-right: 3px;
+    			display: inline-table;
+    			background-color: #252a44;
+    			color: #fff;
+    			margin-top: 10px;
+    			position: relative;
+
+    			.wblock-txt {
+
+    				> p {
+    					margin-bottom: 10px;
+    				}
+
+    				margin-top: 10px;
+    				margin: 0 18px;
+    			}
+
+    			.read-more-text {
+					color: black;
+    				position: absolute;
+    				right: 0px;
+    				bottom: -28px;
+
+    				a  {
+    			   		color: #000;
+    			   		text-decoration: underline;
+    				}
+				}
+			}
+		}
+	}
+
+	.meet-ninjas-container {
+		position: relative;
+		text-align: center;
+		background-color: @theme-color;
+		color: #fff;
+
+		.nblocks-container {
+			margin: 10px 0px;
+
+			.nblock {
+    			margin-right: 7px;
+    			display: inline-block;
+    			margin-top: 10px;
+
+    			img {
+					width: 220px;
+				}
+
+    			.designation {
+    				width: 198px;
+    				border: 1px solid #6b6e7f;
+    				position: relative;
+    				top: -8px;
+    				border-top: 0;
+    				padding: 10px;
+
+    				p:nth-child(1) {
+    					font-weight: bold;
+    				}
+
+    				p:nth-child(2) {
+    					color: #6b6e7f;
+    				}
+    			}
+			}
+		}
+
+		.button-primary {
+		    margin-top: 20px;
+		}
+	}
+
+	.success-stories-container {
+		position: relative;
+		text-align: center;
+
+		.success-stories-reel-container {
+			width: 80%;
+			margin: 0 auto;
+
+			margin-top: 10px;
+
+			.success-story-txt {
+				width: 53%;
+    			background-color: #252a44;
+    			display: inline-block;
+    			margin-right: 20px;
+    			position: relative;
+
+    			color: #fff;
+    			text-align: left;
+    			padding: 25px;
+
+    			.read-more-text {    			
+    				a  {
+    			   		text-decoration: underline;
+    				}
+				}
+
+    			p {
+    			 	margin-bottom: 20px;
+    			}
+			}
+
+			.success-story-logo {
+    			display: inline-block;
+    			position: relative;
+    			left: 25px;
+
+    			&.tecademics, &.hyundai {
+    				transform: translateY(-35%);	
+    			}
+
+    			&.probist, &.anhance, &.supportsync {
+    				transform: translateY(-17%);	
+    			}
+			}
+		}
+
+		.read-more-text-success-stories {
+			position: relative; top: 40px;
+    		width: 70%;
+    		margin: 0 auto;
+
+    		> div {
+    			float: right;
+
+    			a  {
+    				color: #000;
+    				text-decoration: underline;
+    			}
+    		}
+    	}
+	}
+
+	.flipper-container {
+		display: inline-block;
+		perspective: 1000px;
+	}
+
+	.flipper-container:hover .wblock {
+		transform: rotateX(-180deg);
+	}
+
+	.wblock {
+		transition: 0.6s;
+		transform-style: preserve-3d;
+		position: relative;
+
+		.wblock-img {
+			width: 36%; 
+			margin: 0 auto;
+			margin-top: 68px;
+
+
+			img {
+				width: 101px;
+    			height: 95px;
+			}
+		}
+
+		.wblock-txt {
+			top: 0px !important;
+		}
+	}
+
+	.front, .back {
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+
+		transition: 0.6s;
+    	transform-style: preserve-3d;
+	}
+
+	.front {
+		z-index: 2;
+	}
+
+	.back {
+		transform: rotateX(180deg);
+		padding-left: 0px !important; 
+		margin: 0px;
+
+		.back-content {
+			margin: 0 18px; 
+			margin-top: 0px; 
+			position: absolute;
+			top: 15px;
+		}
+	}
+
+	/* Less than tablet */
+	@media (max-width: 750px) {
+
+		.success-stories-container {
+			.success-stories-reel-container {
+				.success-story-txt {
+					width: 80%;
+					margin-right: 0px;
+				}
+
+				.success-story-logo {
+					top: 15px; left: -5px;
+					margin-bottom: 10px;
+
+					&.tecademics, &.hyundai {
+    					transform: translateY(0);	
+    				}
+
+    				&.probist, &.anhance, &.supportsync {
+    					transform: translateY(0);	
+    				}
+				}
+
+				.success-story-selector-container {
+					width: 40%;
+				}
+			}
+		}
+	}
+
+	/* Less than or equal to Desktop */
+	@media (max-width: 1500px) {
+	
+		.how-hireninja-works-container {
+			.wblocks-container {
+				.wblock {
+		    		width: 280px;
+   					height: 240px;
+				}
+			}
+		}
+
+		.meet-ninjas-container {
+			.nblocks-container {
+				.nblock {
+					img {
+						width: 190px;
+					}
+					.designation {
+						width: 168px;
+					}
+				}
+			}
+		}
+	}
+
+	/* Less than Desktop */
+	@media (max-width: 1600px) {
+		.wblock {
+			.wblock-img {
+				margin-top: 53px;
+			}
+		}
+
+		.back {
+			.back-content {
+				top: 25px;
+			}
+		}
+	}
+}

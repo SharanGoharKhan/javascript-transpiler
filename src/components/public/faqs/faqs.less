@@ -1,0 +1,84 @@
+.faqs-container {
+
+	.content-container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			padding: 40px 0px;
+		}
+	}
+
+	.faqs-section {
+		text-align: center;
+
+		.faqs-ninjas-companies-container {
+			margin-top: 20px;
+			color: #fff;
+
+			.ninjas-section, .companies-section {
+				background-color: #252a44;
+    			width: 70%;
+    			display: inline-block;
+    			text-align: left;
+    			vertical-align: top;
+    			margin-top: 20px;
+
+    			> div {
+    				padding: 30px;
+				}
+			}
+
+			.read-more-section {
+				margin-top: 20px;
+				button {
+					border-color: #33C3F0;
+    				width: 189px;
+    				color: #33C3F0;
+				}
+			}
+
+			.question-section {
+				font-size: 1.1em;
+			}
+
+			.answer-section {
+				padding: 20px;
+			}
+
+			.question-answer-container {
+				padding: 20px;
+				cursor: pointer;
+
+				&:hover {
+					background-color: #2e344e;
+				}
+			}
+		}
+
+		.post-project-section {
+			margin-top: 25px;
+		}
+	}
+
+	a {
+   		text-decoration: none;
+   		color: #1EAEDB !important;
+
+   		&:hover {
+   			color: #1EAEDB !important;
+   		}
+	}
+
+	/* Less than MEDIUM Desktop */
+	@media (max-width: 1050px) {
+		.faqs-section {
+			.faqs-ninjas-companies-container {
+				.ninjas-section, .companies-section {
+    				width: 100%;
+				}
+			}
+		}
+	}
+}

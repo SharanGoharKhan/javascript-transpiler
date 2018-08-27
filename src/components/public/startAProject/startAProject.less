@@ -1,0 +1,238 @@
+.startProject-container {
+
+	.content-container {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			padding: 20px 0px;
+		}
+	}
+
+	.start-project-details {
+		text-align: center;
+		
+		.content-container {
+			> div {
+				padding: 50px 0px;
+
+				div:nth-child(2) {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	hr {
+		margin-top: 3rem;
+    	margin-bottom: 2.5rem;
+	}
+
+	input, textarea {
+		background-color: #f0f0f0;
+		border: 1px solid #c7c4c4;
+		border-radius: 2%;
+
+		&:focus {
+			border-color: #c7c4c4 !important;
+		}
+	}
+
+	.start-project-mandatory-container {
+
+		.content-container {
+			> div {
+				padding: 0px 0px 10px 0px;
+			}
+		}
+
+		.input-section {
+			margin-top: 20px;
+
+			> div {
+				width: 30%;
+				display: inline-block;
+				margin-right: 80px;
+
+				label {
+					display: inline-block;
+					margin-top: 5px;
+				}
+				
+				input {
+					width: 90%;
+				}
+			}
+		}
+	}
+
+	.start-project-optional-label {
+		text-align: center;
+
+		.content-container {
+			> div {
+				padding: 0px 0px 10px 0px;
+			}
+
+			hr {
+				margin-bottom: -0.5rem;
+			}
+
+			.blue-dot {
+				left: 0px;
+				cursor: pointer;
+				display: inline-block;
+    			position: relative;
+    			top: -24px;
+    			width: 50px;
+    			height: 50px;
+    			cursor: pointer;
+    			transform: rotate(90deg);
+
+    			&.rotateAtTop {
+    				transform: rotate(-90deg);
+    			}
+
+    			> p {
+    				font-size: 28px; 
+    				margin-top: 0px;
+    			}
+			}
+		}
+	}
+
+	.start-project-optional-container {
+
+		.content-container {
+			> div {
+				padding: 10px 0px 90px 0px;
+			}
+		}
+
+		.input-section {
+			margin-top: 20px;
+			position: relative;
+
+			> div {
+				width: 50%;
+				display: inline-block;
+				margin-right: 80px;
+
+				> div {
+					position: relative;
+					margin-bottom: 15px;
+
+					label {
+						margin-top: 5px;
+					}
+				}
+
+				input, textarea {
+					width: 90%;
+				}
+
+				textarea {
+					height: 120px;
+				}
+			}
+		}
+
+		.upload-files-section {
+			  margin: 20px 0px;
+    		  border: 1px dotted;
+    		  padding: 20px;
+    		  width: 50%;
+
+    		  div:nth-child(1) {
+    		  	 position: relative;
+    			 top: -11px;
+			  }
+
+			  div:nth-child(2) {
+    		  	 width: 60%;
+			  }
+
+    		  > div {
+    		  	display: inline-block;
+    		  }
+
+			  #file-select {
+					display: none;
+			  }
+
+    		  button {
+    		  	 background-color: #37538f;
+    			 border-color: #37538f;
+    		  }
+		}
+	}
+
+	.send-project-section {
+		margin-top: 30px;
+
+		> div {
+			margin-top: 5px;
+
+			button {
+				margin-top: 5px;
+				margin-right: 10px;
+			}
+		}
+
+		a {
+			color: #3aa9e3;
+			text-decoration: underline;
+		}
+	}
+
+	.blue-dot {
+    	position: absolute;
+    	left: -29px;
+    	top: -4px;
+    	width: 30px;
+    	height: 30px;
+    	background-color: #37538f;
+		
+		border-radius: 50%;
+		color: #fff;
+		text-align: center;
+
+		> p {
+		   margin-top: 3px;
+		}
+	}
+
+	.sm-asterik {
+    	line-height: 0;
+    	color: #e32072;
+    	display: inline-block;
+    	position: relative;
+    	top: -4px;
+    }
+
+	/* Less than desktop */
+	@media (max-width: 1000px) {
+
+		.start-project-mandatory-container, .start-project-optional-container {
+			.input-section {
+				> div {
+					margin-right: 0px;
+					width: 100%;
+
+					input, textarea {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.upload-files-section {
+    		width: 86% !important;
+
+			div:nth-child(2) {
+    		   width: 100% !important;
+			}
+		}
+	}
+}

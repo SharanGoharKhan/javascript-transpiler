@@ -1,0 +1,205 @@
+<main>
+	<div class="home-container howItWorks-container container">
+		<div class="row how-hireninja-works-container">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div>
+						<h5>HOW HIRENINJA WORKS</h5>
+						<p>Our screened and tested Coding Ninjas ensure your project gets done on time - flawlessly</p>
+						<div class="end-note"></div>
+					</div>
+					<div class="wblocks-container">
+						<div class="flipper-container">
+							<div class="wblock">
+								<div class="front">
+									<div class="wblock-img">
+										<img src="/imgs/how-hireninja-works-1.svg">
+									</div>
+									<div class="wblock-txt">
+										<h6>Sign-up with us</h6>
+										<div class="end-note" style="background-color:#fff;"></div>
+									</div>
+								</div>
+								<div class="back">
+									<div class="back-content">
+										<p>Fill out a basic form and our resource will get back to you instantly. Our Humanized communication style ensures every detail gets captured.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flipper-container">
+							<div class="wblock">
+								<div class="front">
+									<div class="wblock-img">
+										<img src="/imgs/how-hireninja-works-2.svg">
+									</div>
+									<div class="wblock-txt">
+										<h6>Give your Project Brief</h6>
+										<div class="end-note" style="background-color:#fff;"></div>
+									</div>
+								</div>
+								<div class="back">
+									<div class="back-content">
+										<p>The assigned project manager will assist you throughout your journey with us to capture relevant project details and requirements.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flipper-container">
+							<div class="wblock">
+								<div class="front">
+									<div class="wblock-img">
+										<img src="/imgs/how-hireninja-works-3.svg">
+									</div>
+									<div class="wblock-txt">
+										<h6>Get the Ninja you need</h6>
+										<div class="end-note" style="background-color:#fff;"></div>
+									</div>
+								</div>
+								<div class="back">
+									<div class="back-content">
+										<p>Tell us your requirements for the coding Ninja your project requires. Based on your requirements we will find the perfect Ninja for your project.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flipper-container">
+							<div class="wblock">
+								<div class="front">
+									<div class="wblock-img">
+										<img src="/imgs/how-hireninja-works-4.svg">
+									</div>
+									<div class="wblock-txt">
+										<h6>Get work done within Budget</h6>
+										<div class="end-note" style="background-color:#fff;"></div>
+									</div>
+								</div>
+								<dir class="back">
+									<div class="back-content">
+										<p>Tell us your budget and we will work around it with you to get your project done through our Coding Ninjas. Put an end to your money-woes with us.</p>
+									</div>
+								</dir>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row strategy-container">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div class="strategy-content-img">
+						<img src="/imgs/strategy-image.png">
+					</div>
+					<div class="strategy-content-details">
+						<h5>We strategize to make your project successful.</h5>
+						<p>Others might make successful project management seem pretty straightforward to get you and your money onboard. Here at HireNinja we accept its complexity and strategize to actually make it simple. We minimize complexity and associated risks by precautionary measures such as having a pool of pre-screened and tested Coding Ninjas and experienced product managers on board.</p>
+						<a ui-sref="app.public.startAProject"><button class="button-primary">POST A PROJECT</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row estimate-container">
+			<div class="content-container">
+				<div class="twelve columns">
+				   <div>
+				   		<h5>Get an estimate for your project</h5>
+				   		<span>We can help you get an estimate of your budget requirements.</span>
+				   </div>
+
+				   <div class="mobile-estimate-table">
+				   		<div class="estimate-table">
+							<div class="estimate-factors-col">
+								<div class="estimate-factor">
+									Select options
+								</div>
+								<div class="estimate-factor">
+									<div>
+										COMPLETE
+									</div>
+									<div class="grades round">
+										<div class="low" ng-class="{'selected': currentSelectedCompleteFactor == completeLow}" ng-click="selectCompleteFactor(completeLow);" title="Low">L</div>
+										<div class="medium" ng-click="selectCompleteFactor(completeMedium);" ng-class="{'selected': currentSelectedCompleteFactor == completeMedium}" title="Medium">M</div>
+										<div class="high" ng-click="selectCompleteFactor(completeHigh);" ng-class="{'selected': currentSelectedCompleteFactor == completeHigh}" title="High">H</div>
+									</div>
+								</div>
+								<div class="estimate-factor">
+									<div>
+										SPEED
+									</div>
+									<div class="grades">
+										<div class="low" ng-click="selectSpeedFactor(speedLow);"  ng-class="{'selected': currentSelectedSpeedFactor == speedLow}"title="Low">L</div>
+										<div class="medium" ng-click="selectSpeedFactor(speedMedium);" ng-class="{'selected': currentSelectedSpeedFactor == speedMedium}" title="Medium">M</div>
+										<div class="high" ng-click="selectSpeedFactor(speedHigh);" ng-class="{'selected': currentSelectedSpeedFactor == speedHigh}" title="High">H</div>
+									</div>
+								</div>
+								<div class="estimate-factor">
+									<div>
+										PARTS
+									</div>
+									<div class="grades graph">
+										<div ng-click="selectPartsFactor(partsLow);" title="Low">
+											<div class="low" ng-class="{'selected': currentSelectedPartsFactor == partsLow}"></div>
+										</div>
+										<div ng-click="selectPartsFactor(partsMedium);" title="Medium">
+											<div class="medium" ng-class="{'selected': currentSelectedPartsFactor == partsMedium}"></div>
+											<div class="low"></div>
+										</div>
+										<div ng-click="selectPartsFactor(partsHigh);" title="High">
+											<div class="high" ng-class="{'selected': currentSelectedPartsFactor == partsHigh}"></div>
+											<div class="medium"></div>
+											<div class="low"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="estimate-factor-values-col">
+								<div class="select-estimate-factor">
+									<div class="select-estimate-factors-container">
+										<div class="estimate-factor" ng-class="{'selected': currentSelectedEstFactor == saasProducts}" ng-click="selectEstFactor(saasProducts);">SAAS Products</div>
+										<div class="estimate-factor" ng-class="{'selected': currentSelectedEstFactor == socialNetworking}" ng-click="selectEstFactor(socialNetworking);">Social networking</div>
+										<div class="estimate-factor" ng-class="{'selected': currentSelectedEstFactor == health}" ng-click="selectEstFactor(health);">Health</div>
+									</div>
+								</div>
+								<div class="estimate-factor-values">
+									<table>
+										<tr>
+											<th>TYPES</th>
+											<th>WEB/Hour</th>
+											<th>IOS/Hour</th>
+											<th>ANDROID/Hour</th>
+										</tr>
+										<tr>
+											<th>Housing</th>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][0]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][1]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][2]"></td>
+										</tr>
+										<tr>
+											<th>Transportation</th>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][3]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][4]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][5]"></td>
+										</tr>
+										<tr>
+											<th>Auction</th>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][6]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][7]"></td>
+											<td ng-bind="estFactorValues[currentSelectedEstFactor][currentSelectedCompleteSpeedPartsFactors][8]"></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+				   </div>
+
+					<div class="post-project-section">
+						<p>We bet you're impressed! Start your project now.</p>
+						<a ui-sref="app.public.startAProject"><button class="button-primary">POST A PROJECT</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

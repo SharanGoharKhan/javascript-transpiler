@@ -1,0 +1,104 @@
+.ourNinjas-container {
+
+	.content-container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			padding: 50px 0px;
+		}
+	}
+
+	.ourNinjas-map-container {
+		 text-align: center;
+
+		 .map-container {
+		 	margin-top: 40px;
+		 }
+	}
+
+	.ourNinjas-skills-container {
+		background-color: #252a44;
+		color: #fff;
+		text-align: center;
+
+		.skills-container {
+		   margin-top: 40px;
+		}
+
+		.become-ninja-container {
+			margin-top: 20px;
+
+			button {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.ourNinjas-expertise-container {
+		text-align: left;
+
+		.expertise-txt {
+    		display: inline-block;
+
+    		width: 48%;
+    		display: inline-block;
+    		margin-right: 50px;
+	    	position: relative;
+    		top: 100px;
+		}
+
+		.expertise-img {
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+		}
+	}
+
+	.ourNinjas-screeningprocess-container {
+		text-align: center;
+
+		.screeningprocess-container {
+		   position: relative;
+    	   right: 20px;
+		   margin-top: 40px;
+		}
+	}
+
+	.post-project-container {
+		margin-top: 20px;
+	}
+
+	/* Less than Desktop tablet devices */
+	@media (max-width: 550px) {
+		.ourNinjas-screeningprocess-container {
+			.screeningprocess-container {
+    	   		right: 0px;
+			}
+		}
+	}
+
+	/* Less than mediumDesktop*/
+	@media (max-width: 1200px) {
+		img {
+			width: 100%;
+		}
+	}
+
+	/* Less than Desktop devices */
+	@media (max-width: 1300px) {
+		.ourNinjas-expertise-container {
+			text-align: center;
+			.expertise-txt {
+				margin-right: 0px;
+				width: 100%;
+				top: 0px;
+			}
+			.expertise-img {
+				float: none !important;
+				margin-top: 50px;
+			}
+		}
+	}
+}

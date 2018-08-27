@@ -1,0 +1,177 @@
+.whyUsContainer {
+
+	.content-container {
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+
+		> div {
+			padding: 50px 0px 90px 0px
+		}
+	}
+
+	.whyHireNinjaContainer {
+		text-align: center;
+
+		.hire-ninja-logo-symbol {
+			display: inline-block;
+			vertical-align: bottom;
+
+			.hire-ninja-logo {
+				margin-top: 100px; 
+				border: 10px solid #252a44; 
+				width: 250px; 
+				height: 250px; 
+				border-radius: 50%;
+
+				img {
+					position: relative;
+    				right: 19px;
+    				top: 10px;
+				}
+			}
+
+			.hire-ninja-logo-holder {
+				width: 10px; 
+				height: 640px; 
+				background-color: #252a44; 
+				position: relative; 
+				left: 48%;
+				top: 0px;
+			}
+		}
+
+		.whyHireNinja-details-container {
+			margin-top: -50px;
+
+			.detail-section {
+				display: inline-block;
+				&.left {
+					margin-right: -110px;
+				}
+				&.right {
+					margin-left: -110px;
+				}
+				.detail-txt {
+					width: 470px;
+
+					width: 550px;
+					background-color: #252a44; 
+					margin-top: 5px;
+					color: #fff;
+    				text-align: left;
+    				padding: 20px;
+
+    				.img-content {
+    					float: left;
+    					display: inline-block; 
+    					width: 20%; 
+    					margin-right: 8px;
+
+    					img {
+    						position: relative; 
+    						top: -10px;
+    						width: 80px;
+    					}
+    				}
+
+    				.txt-content {
+    					display: inline-block; 
+    					width: 78%;
+    				}
+				}
+			}
+		}
+
+		.join-team-section {
+			margin-top: 50px;
+		}
+	}
+
+	.ninja-skills-container {
+	    background-color: #252a44;
+    	color: #fff;
+		text-align: center;
+
+		.content-container {
+			> div {
+				padding: 50px 0px;
+			}
+		}
+
+		.skills-details {
+			width: 50%;
+    		margin: 0 auto;
+		}
+
+		button {
+			margin-top: 10px;
+		}
+	}
+
+	/* Less than Tablet */
+	@media (max-width: 500px) {
+
+		.whyHireNinja-details-container {
+			.detail-section {
+				.detail-txt {
+					width: 90% !important;
+
+					.txt-content {
+    					display: inline-block; 
+    					width: 100% !important;
+    				}
+				}
+			}
+		}
+
+		.ninja-skills-container {
+			.skills-details {
+				width: 100%;
+			}
+		}
+	}
+
+	/* Less than Medium Desktop */
+	@media (max-width: 1350px) {
+
+		.whyHireNinjaContainer {
+			.hire-ninja-logo-symbol {
+				display: none;
+			}
+		}
+
+		.whyHireNinja-details-container {
+			margin-top: 0px !important;
+
+			.detail-section {
+				&.left {
+					margin-right: 0px !important;
+				}
+				&.right {
+					margin-left: 0px !important;
+				}
+			}
+		}
+	}
+
+	/* Less than Desktop HD */
+	@media (max-width: 1500px) {
+
+		.whyHireNinjaContainer {
+			.whyHireNinja-details-container {
+				.detail-section {	
+					.detail-txt {
+						width: 518px;
+					}
+				}
+			}
+
+			.hire-ninja-logo-symbol {
+				.hire-ninja-logo-holder { 
+					height: 550px;
+				}
+			}
+		}
+	}
+}

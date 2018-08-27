@@ -1,0 +1,46 @@
+<main>
+	<div class="faqs-container container">
+		<div class="row faqs-section">
+			<div class="content-container">
+				<div class="twelve columns">
+					<div class="faqs-details">
+						<h5>Frequently Asked Questions</h5>
+						<p>What would you like to know? We are here to help in every possible way.</p>
+						<div class="end-note"></div>
+					</div>
+					<div class="faqs-ninjas-companies-container">
+						<div class="ninjas-section">
+							<div>
+								<h5>Ninjas</h5>
+								<div class="question-answer-container" ng-repeat="nFaq in ninjasFaqs" ng-click="toggleExpandCollapse(nFaq)">
+									<span ng-show="!nFaq.isExpanded" >+</span>
+									<span ng-show="nFaq.isExpanded">-</span>
+									<span class="question-section" ng-bind="nFaq.Q"></span>
+									<p class="answer-section" ng-show="nFaq.isExpanded" compile="nFaq.A"></p>
+								</div>
+							</div>
+						</div>
+						<div class="companies-section">
+							<div>
+								<h5>Companies</h5>
+								<div class="question-answer-container" ng-repeat="cFaq in companiesFaqs" ng-click="toggleExpandCollapse(cFaq)">
+									<span ng-show="!cFaq.isExpanded" >+</span>
+									<span ng-show="cFaq.isExpanded">-</span>
+									<span class="question-section" ng-bind="cFaq.Q"></span>
+									<p class="answer-section" ng-show="cFaq.isExpanded" compile="cFaq.A"></p>
+								</div>
+							</div>
+						</div>
+					<!-- <div class="read-more-section">
+						<button>READ MORE</button>
+					</div> -->
+					</div>
+					<div class="post-project-section">
+						<p>We bet you are Impressed! Start your Project Now</p>
+						<a ui-sref="app.public.startAProject"><button class="button-primary">POST A PROJECT</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

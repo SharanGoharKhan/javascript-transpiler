@@ -1,0 +1,119 @@
+<header class="header container">
+	<div class="row header-content-container">
+		<div class="tweleve columns">
+			<div class="header-content">
+				<div class="header-logo">
+					<a ui-sref="app.public.home">
+						<img src="/imgs/header-logo.svg">
+						<span class="header-logo-text"><span class="light">HIRE</span><span class="medium">NINJA</span></span>
+					</a>
+				</div>
+				<nav class="header-nav-bar">
+					<div nav-bar-menu ng-mouseleave="onMouseleave();">
+						<a href="javascript:void(0);" ng-mouseover="onMouseover();">Solution</a>
+						<div class="menu" ng-show="canShowMenu">
+							<p><a ui-sref="app.public.solution.howItWorks" ng-click="onClick();">How it Works</a></p>
+							<p><a ui-sref="app.public.solution.ourNinjas" ng-click="onClick();">Our Ninjas</a></p>
+							<p><a ui-sref="app.public.solution.clients" ng-click="onClick();">Clients</a></p>
+							<p><a ui-sref="app.public.startAProject" ng-click="onClick();">Start a Project</a></p>
+						</div>
+					</div>
+					<div nav-bar-menu ng-mouseleave="onMouseleave();">
+						<a href="javascript:void(0);" ng-mouseover="onMouseover();">About</a>
+						<div class="menu" ng-show="canShowMenu">
+							<p><a ui-sref="app.public.about.company" ng-click="onClick();">Company</a></p>
+							<p><a ui-sref="app.public.about.whyUs" ng-click="onClick();">Why Us</a></p>
+							<!-- <p><a href="" ng-click="onClick();">Pricing</a></p>
+							<p><a href="" ng-click="onClick();">Careers</a></p>
+							<p><a href="" ng-click="onClick();">Blogs</a></p> -->
+						</div>
+					</div>
+					<div>
+						<a href="https://app.hireninja.com/auth/login">Ninja Sign-in</a>
+					</div>
+				</nav>
+				<header-hamburger-menu></header-hamburger-menu>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="site-main-content-container">
+	<ui-view></ui-view>
+</div>
+
+<footer class="footer container">
+	<div class="bg-footer">
+		<div class="footer-logo">
+			<img src="/imgs/footer-logo.png">
+		</div>
+		<div class="row bg-footer-container">
+			<div class="tweleve columns">
+				<div class="columns three">
+					<div class="header-content-details">
+						<h6>SOLUTION</h6>
+						<p><a ui-sref="app.public.solution.howItWorks">How it Works</a></p>
+						<p><a ui-sref="app.public.solution.ourNinjas">Our Ninjas</a></p>
+						<p><a ui-sref="app.public.solution.clients">Clients</a></p>
+						<p><a ui-sref="app.public.startAProject">Start a Project</a></p>
+					</div>
+				</div>
+				<div class="columns four">
+					<div class="header-content-details">
+						<h6>ABOUT</h6>
+						<p><a ui-sref="app.public.about.company">Company</a></p>
+						<p><a ui-sref="app.public.about.whyUs">Why Us</a></p>
+						<!-- <p><a href="javscript:void(0);">Pricing</a></p>
+						<p><a href="javscript:void(0);">Careers</a></p>
+						<p><a href="javscript:void(0);">Blogs</a></p> -->
+					</div>
+				</div>
+				<div class="columns five">
+					<div class="header-content-details">
+						<h6>CONTACT</h6>
+						<form name="contactForm">
+							<div class="row">
+								<div class="twelve columns">
+									<input placeholder="NAME" type="text" name="username" pattern="^[a-zA-Z\s]*$" ng-model="contact_name" required>
+									<input placeholder="EMAIL" type="email" name="email" ng-model="contact_email" required>
+									<textarea placeholder="MESSAGE" ng-model="contact_message"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="eight columns">
+									<input type="checkbox" name="">
+									<span class="meta-text">Subscribe to HireNinja Email Newsletter</span>
+								</div>
+								<div class="four columns">
+									<button class="button-primary" ng-click="sendContactDetails();">SEND</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="sm-footer">
+		<div class="row sm-footer-container">
+			<div class="seven columns">
+				<div class="header-content-details">
+					<span><a ui-sref="app.public.faqs">FAQ</a></span>
+					<span>Terms&nbsp;&amp;&nbsp;Condition</span>
+					<span>Privacy Policy</span>
+				</div>
+			</div>
+			<div class="five columns">
+				<div class="social-media-container">
+					<a href="https://www.facebook.com/HireNinjaInc/" target="_blank"><span class="media"><img src="/imgs/facebook.svg"></span></a>
+				</div>
+				<div class="social-media-container">
+					<a href="https://www.linkedin.com/company/hireninjainc" target="_blank"><span class="media linkedin"><img src="/imgs/linkedin-logo.svg"></span></a>
+				</div>
+				<div class="social-media-container">
+					<a href="https://twitter.com/HireNinjaInc" target="_blank"><span class="media"><img src="/imgs/twitter.svg"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
