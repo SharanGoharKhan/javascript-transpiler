@@ -45,5 +45,12 @@ const isGreater = (a, b) => {
 	.catch(result => {
 	   console.log('smaller')
 	})
+	
+	var x = [1,2,3]
+	let ind = x.includes(2)
+	console.log(ind)
+	for(let i of x) {
+		console.log(i)
+	}
 	const myModule = { x: 1, y: () => { console.log('This is ES5') }}
 	export default myModule;

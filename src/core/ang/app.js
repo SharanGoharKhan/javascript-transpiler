@@ -1,3 +1,4 @@
+require("@babel/polyfill");
 var app = angular.module('App',['ui.router']);
 
 app.config(function($urlRouterProvider, $locationProvider, $stateProvider){
